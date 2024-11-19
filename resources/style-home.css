@@ -133,7 +133,6 @@ hr {
 .imageRoulette img{
 	width: 33.333vw;
 	height: auto;
-	box-shadow: 0px black;
 	transition: transform 2s, box-shadow 2s;
 }
 

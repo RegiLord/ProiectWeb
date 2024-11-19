@@ -307,16 +307,35 @@ hr {
 	.storyCover p#EmpNClot {transform: none;}
 	.storyCover p#MatchGirl {transform: none;}
 }
+
+section > h1 {
+	font-size: 4em;
+	margin: 0;
+	color: black;
+	font-family: "Itim";
+
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
 @media screen and (max-width: 768px) {
-	.imageArticle, .listofParagraphs, .normalArticle {
+	.imageArticle, .listofParagraphs, .normalArticle{
 		font-size: 1.5em;
 	}
 	.listofParagraphs li {
 		border: 2px solid black;
 	}
+
+	section > h1 {
+		font-size: 3em;
+	}
 }
 @media screen and (max-width: 500px) {
 	.imageArticle, .listofParagraphs, .normalArticle{
 		font-size: 1em;
+	}
+
+	section > h1 {
+		font-size: 2em;
 	}
 }

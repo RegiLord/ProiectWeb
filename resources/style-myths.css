@@ -231,6 +231,47 @@ hr {
 	display: block;
 }
 
+#LittleMermaid {
+	font-size: 0.7em;
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+	color: white;
+	background-color: #1a96d4;
+	border: 10px groove #1a44d4;
+}
+#UglyDuck {
+	font-size: 0.7em;
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+	color: white;
+	background-color: #6f1ad4;
+	border: 10px groove #9c1ad4;
+}
+#EmpNClot {
+	font-size: 0.7em;
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+	color: white;
+	background-color: #9e170e;
+	border: 10px groove #e73010;
+}
+#MatchGirl {
+	font-size: 0.7em;
+	font-family: "Edu AU VIC WA NT Pre", cursive;
+	color: white;
+	background-color: #da7012;
+	border: 10px groove #da5e12;
+}
+
+.storyCover p#LittleMermaid {
+	transform: translate(35vw, -100px);
+}
+.storyCover p#UglyDuck {
+	transform: translate(35vw, -142px);
+}
+.storyCover p#EmpNClot {
+	transform: translate(35vw, -184px);
+}
+.storyCover p#MatchGirl {
+	transform: translate(35vw, -226px);
+}
 
 @media screen and (max-width: 1300px) {
 	.listofParagraphs ul:hover li:last-child{
@@ -260,17 +301,41 @@ hr {
 	.listofParagraphs ul:hover li:last-child{
 	margin-bottom: 0;
 }
+
+	.storyCover p#LittleMermaid {transform: none;}
+	.storyCover p#UglyDuck {transform: none;}
+	.storyCover p#EmpNClot {transform: none;}
+	.storyCover p#MatchGirl {transform: none;}
 }
+
+section > h1 {
+	font-size: 4em;
+	margin: 0;
+	color: black;
+	font-family: "Itim";
+
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
 @media screen and (max-width: 768px) {
-	.imageArticle, .listofParagraphs, .normalArticle {
+	.imageArticle, .listofParagraphs, .normalArticle{
 		font-size: 1.5em;
 	}
 	.listofParagraphs li {
 		border: 2px solid black;
 	}
+
+	section > h1 {
+		font-size: 3em;
+	}
 }
 @media screen and (max-width: 500px) {
 	.imageArticle, .listofParagraphs, .normalArticle{
 		font-size: 1em;
+	}
+
+	section > h1 {
+		font-size: 2em;
 	}
 }
