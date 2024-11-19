@@ -1,0 +1,227 @@
+body {
+	display: flex;
+	flex-direction: column;
+	margin: 0;
+}
+
+header {
+	background-color: #dd7c00;
+}
+
+footer {
+	display: block;
+	background-color: #dd7c00;
+	letter-spacing: 6px;
+	text-align: center;
+	color: white;
+}
+
+#navlist {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#navlist > li > a {
+	display: inline-block;
+  	color: white;
+  	text-align: center;
+  	padding: 27px 20px;
+  	font-size: 2em;
+  	text-decoration: none;
+  	font-family: "Itim";
+  	margin: 0;
+}
+
+#navlist > li > a:hover {
+	background-color: #f4a137;
+}
+
+.current_page {
+	background-color: #c66f01;
+}
+
+li.current_page {
+	background-color:  #dd7c00;
+}
+
+.dropdown {
+
+}
+.dropdown-content {
+	list-style-type: none;
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	position: absolute;
+	background-color: #f4a137;
+
+	text-align: left;
+	color: white;
+	font-size: 1.4em;
+  font-family: "Itim";
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown-content > li > a {
+	display:block;
+	width: 100%;
+}
+.dropdown-content > li > a:hover {
+		background-color: #dd7c00;
+}
+ 
+
+hr {
+	border: 1px solid black;
+	height: 3em;
+	width: auto;
+	margin-top: 2px;
+	margin-bottom: 2px;
+
+	background-image: url(snake-line.png);
+	background-repeat: repeat-x;
+	background-position: left;
+	background-size: auto 3em;
+}
+
+@media screen and (max-width: 768px) {
+ #navlist > li {
+    display: block;
+    text-align: center;
+  }
+
+  #navlist > li > a {
+  	background: none;
+  	font-size: 2em;
+  	letter-spacing: 3px;
+  	padding: 2px 0px;
+  }
+
+  #navlist > li:hover {
+  	background-color: #f4a137;
+  }
+
+  li.current_page {
+  	background-color: #c66f01;
+  }
+}
+
+@media screen and (min-width: 768px) {
+	#navlist > li {
+		display: inline;
+	}	
+}
+
+hr {
+	border: 1px solid black;
+	height: 3em;
+	width: 300%;
+	margin-top: 2px;
+	margin-bottom: 2px;
+
+	background-image: url(snake-line.png);
+	background-repeat: repeat-x;
+	background-position: left;
+	background-size: auto 3em;
+
+	transition: background-position 30s linear;
+}
+
+hr:hover {
+	background-position: right;
+	
+}
+
+
+main {
+	background-color: #ffd02a;
+	padding-top: 20px;
+
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	overflow: auto;
+}
+
+.container {
+	padding-bottom: 20px;
+	display: flex;
+
+	justify-content: center;
+	align-content: center;
+}
+
+.container > img {
+	width: 30vw;
+	height: auto;
+	border-radius: 10px;
+
+	margin-right: 20px;
+	margin-left: 20px;
+} 
+.container > a {
+	margin-top: 12vh;
+	opacity: 0;
+
+	width: auto;
+	height: auto;
+	text-decoration: none;
+	font-family: "Itim";
+	font-size: 3em;
+	color: black;
+	position: absolute;
+}
+
+@keyframes fadein {
+	from {opacity: 0}
+	to {opacity: 1}
+}
+
+.container:hover img {
+	opacity: 0.5;
+	box-shadow: 10px 10px;
+}
+.container:hover a {
+	animation-name: fadein;
+	animation-duration: 2s;
+	animation-fill-mode: forwards;
+}
+
+@media screen and (max-width: 600px) {
+	.container > img {
+		width: 300px;
+		height: auto;
+	}
+
+	.container > a{
+		font-size: 30px;
+		margin-top: 60px;
+	}
+}
+
+@media screen and (min-width:600px) and (max-width: 1100px) {
+	.container > img {
+		width: 400px;
+		height: auto;
+	}
+}
+
+@media screen and (min-width:600px) and (max-width: 1200px) {
+	.container > a {
+		margin-top: 1.6em;
+		font-size: 2.7em;
+	}
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1800px){
+	.container > a {
+		margin-top: 1.5em;
+	}
+}
