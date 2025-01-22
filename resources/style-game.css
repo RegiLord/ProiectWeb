@@ -1,0 +1,273 @@
+body {
+	display: flex;
+	flex-direction: column;
+
+	margin: 0;
+}
+
+main {
+	background-color: #ffd02a;
+}
+
+header {
+	background-color: #dd7c00;
+	height: 100%;
+}
+
+footer {
+	display: block;
+	background-color: #dd7c00;
+	letter-spacing: 6px;
+	text-align: center;
+	color: white;
+}
+
+#navlist {
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+  overflow: hidden;
+  z-index: 0;
+}
+
+#navlist > li > a {
+	display: inline-block;
+  	color: white;
+  	text-align: center;
+  	padding: 27px 20px;
+  	font-size: 2em;
+  	text-decoration: none;
+  	font-family: "Itim";
+  	margin: 0;
+}
+
+#navlist > li > a:hover {
+	background-color: #f4a137;
+}
+
+.current_page {
+	background-color: #c66f01;
+}
+
+li.current_page {
+	background-color:  #dd7c00;
+}
+
+.dropdown {
+}
+.dropdown-content {
+	list-style-type: none;
+	display: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+
+	position: absolute;
+	background-color: #f4a137;
+
+	text-align: left;
+	color: white;
+	font-size: 1.4em;
+  font-family: "Itim";
+}
+.dropdown:hover .dropdown-content{
+	display: block;
+}
+.dropdown-content > li > a {
+	display:block;
+	width: 100%;
+	text-decoration: none;
+	color: white;
+}
+.dropdown-content > li > a:hover {
+		background-color: #dd7c00;
+}
+ 
+
+hr {
+	border: 1px solid black;
+	height: 3em;
+	width: auto;
+	margin-top: 2px;
+	margin-bottom: 2px;
+
+	background-image: url(snake-line.png);
+	background-repeat: repeat-x;
+	background-position: left;
+	background-size: auto 3em;
+}
+
+@media screen and (max-width: 768px) {
+ #navlist > li {
+    display: block;
+    text-align: center;
+  }
+
+  #navlist > li > a {
+  	background: none;
+  	font-size: 2em;
+  	letter-spacing: 3px;
+  	padding: 2px 0px;
+  }
+
+  #navlist > li:hover {
+  	background-color: #f4a137;
+  }
+
+  li.current_page {
+  	background-color: #c66f01;
+  }
+}
+@media screen and (min-width: 768px) {
+	#navlist > li {
+		display: inline;
+	}	
+}
+
+.normalArticle {
+	font-size: 2em;
+	font-family: "Itim";
+	color: black;
+}
+.normalArticle h1 {
+	font-size: 2em;
+	margin: 0;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+.normalArticle h3 {
+	font-size: 1.5em;
+	margin: 0;
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+.normalArticle p {
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.imageArticle {
+	font-size: 2em;
+	font-family: "Itim";
+	color: black;	
+}
+.imageArticle h1 {
+	font-size: 2em;
+	margin: 0;
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-bottom: 30px;
+}
+
+.imageArticle p {
+	margin-left: 5px;
+	margin-right: 5px;
+
+	text-align: justify;
+}
+.imageArticle img {
+	width: 200px;
+	height: auto;	
+
+	border-radius: 10px;
+	margin: 10px;
+	float: left;
+}
+
+#GameList {
+	margin-top: 30px;
+	margin-bottom: 30px;
+	display: flex;
+
+}
+
+#button1, #button2 {
+	color: white;
+	font-size: 3em;
+	font-family: "Itim";
+	margin-left: 20px;
+
+
+	background-color: #dd7c00;
+	border-radius: 20%;
+}
+
+.buttonSt {
+	color: white;
+	font-size: 40px;
+	font-family: "Itim";
+	margin-left: 20px;
+
+	background-color: #dd7c00;
+	border-radius: 20%;
+}
+
+.buttonSt:hover  {
+	background-color: #bda717;
+}
+
+#GameContainer {
+	border: 4px, solid, black;
+	height: 80vh;
+	background-color: grey;
+
+	text-align: center;
+	font-size: 4em;
+}
+
+#highScore {
+	padding: 5px;
+	border: 2px, solid, black;
+	border-radius: 5px;
+	
+	float: right;
+	top: 20%;
+	left: 80%;
+	font-size: 30px;
+}
+
+#score {
+	padding: 5px;
+	border: 2px, solid, black;
+	border-radius: 5px;
+	
+	float: left;
+	top: 20%;
+	left: 80%;
+	font-size: 30px;
+}
+section > h1 {
+	font-size: 4em;
+	margin: 0;
+	color: black;
+	font-family: "Itim";
+
+	padding-top: 30px;
+	padding-left: 30px;
+}
+
+
+@media screen and (max-width: 768px) {
+	.imageArticle, .listofParagraphs, .normalArticle{
+		font-size: 1.5em;
+	}
+	.listofParagraphs li {
+		border: 2px solid black;
+	}
+
+	section > h1 {
+		font-size: 3em;
+	}
+}
+@media screen and (max-width: 500px) {
+	.imageArticle, .listofParagraphs, .normalArticle{
+		font-size: 1em;
+	}
+
+	section > h1 {
+		font-size: 2em;
+	}
+}
+
+
