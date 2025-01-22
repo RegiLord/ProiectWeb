@@ -166,6 +166,7 @@ main {
 	margin-right: 20px;
 	margin-left: 20px;
 } 
+
 .container > a {
 	margin-top: 12vh;
 	opacity: 0;
@@ -210,6 +211,7 @@ main {
 	.container > img {
 		width: 400px;
 		height: auto;
+	}
 	}
 }
 
